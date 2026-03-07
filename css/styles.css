@@ -1,15 +1,15 @@
 :root {
-    --primary-hue: 220;
-    --secondary-hue: 190;
+    --primary-hue: 115;
+    --secondary-hue: 150;
 
-    /* Premium High-Contrast Colors */
-    --bs-primary: hsl(var(--primary-hue), 85%, 55%);
-    --bs-secondary: hsl(var(--secondary-hue), 90%, 45%);
+    /* Premium High-Contrast Colors based on event branding */
+    --bs-primary: hsl(var(--primary-hue), 100%, 40%);
+    --bs-secondary: hsl(var(--secondary-hue), 90%, 35%);
 
-    --bs-dark: hsl(220, 40%, 12%);
-    /* Deep charcoal blue */
-    --text-color: hsl(220, 20%, 35%);
-    --bg-color: hsl(220, 30%, 98%);
+    --bs-dark: hsl(220, 35%, 10%);
+    /* Deep navy-charcoal */
+    --text-color: hsl(220, 20%, 30%);
+    --bg-color: hsl(220, 25%, 98%);
 }
 
 html {
@@ -34,6 +34,29 @@ h6,
 .navbar-brand {
     font-family: 'Outfit', sans-serif;
     color: hsl(220, 30%, 15%);
+}
+
+[style*="background-color: var(--bs-dark)"] h2,
+[style*="background-color: var(--bs-dark)"] h5:not(.location-card-premium h5) {
+    color: #fff !important;
+}
+
+.section-dark {
+    background-color: var(--bs-dark) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.section-dark h2,
+.section-dark .h2,
+.section-dark h3,
+.section-dark .h3,
+.section-dark h5,
+.section-dark .h5 {
+    color: #fff !important;
+}
+
+.section-dark .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .text-primary {
@@ -89,23 +112,23 @@ h6,
 
 /* Navbar */
 .glass-navbar {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(51, 51, 51, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 }
 
 .glass-scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    background: rgba(51, 51, 51, 0.98);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
 .navbar-nav .nav-link {
     font-weight: 500;
-    color: hsl(220, 20%, 30%);
+    color: hsl(0, 0%, 85%);
     transition: color 0.2s;
     font-size: 0.95rem;
 }
@@ -163,8 +186,9 @@ h6,
 }
 
 .text-gradient {
-    background: linear-gradient(120deg, hsl(190, 85%, 70%), hsl(220, 85%, 75%));
+    background: linear-gradient(120deg, hsl(95, 85%, 55%), hsl(135, 85%, 45%));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -209,7 +233,7 @@ h6,
 .shape-3 {
     width: 250px;
     height: 250px;
-    background: hsl(280, 80%, 60%);
+    background: hsl(60, 90%, 55%);
     top: 40%;
     left: 40%;
     animation-delay: -8s;
@@ -282,11 +306,49 @@ h6,
     outline: none;
 }
 
-/* Speaker Image Hover Scale */
-.card img {
-    transition: transform 0.3s ease;
+.location-card-premium {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.35) !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
-.card:hover img {
-    transform: scale(1.05);
+.location-card-premium h5,
+.location-card-premium strong,
+.location-card-premium .text-dark {
+    color: var(--bs-dark) !important;
+}
+
+.location-card-premium .text-muted {
+    color: hsl(220, 15%, 40%) !important;
+}
+
+.location-card-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--bs-primary), var(--bs-secondary));
+    z-index: 3;
+}
+
+.location-card-media {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.location-card-media:hover {
+    border-color: var(--bs-primary) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+    transform: translateY(-2px);
+}
+
+.bg-primary-subtle {
+    background-color: hsl(var(--primary-hue), 100%, 95%) !important;
 }

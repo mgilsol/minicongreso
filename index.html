@@ -7,6 +7,8 @@
     <title>XVI CIE - Congreso de Innovación Educativa</title>
     <meta name="description"
         content="XVI Congreso de Innovación Educativa (CIE) - Máster de Profesorado. Curso 2025/2026.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/robot.png">
 
     <!-- Google Fonts: Outfit for headings, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +30,11 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm glass-navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm glass-navbar navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Unizar <span class="text-primary">H4t3s me</span></a>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="assets/logo_transparent.png" alt="Logo CIE" height="55" class="rounded">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +45,7 @@
                     <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ponentes">Ponentes</a></li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-primary rounded-pill px-4" href="#inscripcion">Inscribirse</a>
+                        <a class="btn btn-primary rounded-pill px-4" href="#ubicacion">Cómo llegar</a>
                     </li>
                 </ul>
             </div>
@@ -58,8 +62,8 @@
             <p class="lead mb-5 opacity-75 max-w-700 mx-auto">Explorando las metodologías del mañana, transformando las
                 aulas del presente. Un espacio de encuentro para futuros docentes.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="#inscripcion" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg feature-btn">Asegura tu
-                    plaza</a>
+                <a href="#ubicacion" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg feature-btn">Cómo
+                    llegar</a>
                 <a href="#programa" class="btn btn-outline-light btn-lg rounded-pill px-5 hover-lift">Ver Programa</a>
             </div>
         </div>
@@ -76,10 +80,10 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <!-- Imagen genérica elegante de educación -->
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Congreso de Educación"
-                            class="img-fluid rounded-4 shadow-lg border border-white border-4">
+                        <!-- Imagen del evento CIE con temática principal -->
+                        <img src="assets/image1.jpeg" alt="Presentación en el Congreso de Educación"
+                            class="img-fluid rounded-4 shadow-lg border border-white border-4 object-fit-cover"
+                            style="max-height: 500px; width: 100%;">
                         <div
                             class="experience-badge bg-white shadow-lg rounded-4 p-3 text-center position-absolute bottom-0 end-0 translate-middle-y me-n4 d-none d-lg-block">
                             <h3 class="fw-bold text-primary mb-0">16ª</h3>
@@ -127,71 +131,15 @@
             <div class="text-center mb-5">
                 <span class="text-primary fw-bold text-uppercase tracking-wider">Agenda</span>
                 <h2 class="display-5 fw-bold mt-2">Programa del Evento</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">Tres jornadas intensivas de aprendizaje,
+                <p class="text-muted mx-auto mb-4" style="max-width: 600px;">Dos jornadas intensivas de aprendizaje,
                     talleres prácticos y ponencias inspiradoras.</p>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="accordion custom-accordion shadow-sm" id="accordionSchedule">
-                        <!-- Day 1 -->
-                        <div class="accordion-item border-0 rounded-4 mb-3 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button rounded-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#day1" aria-expanded="true">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="date-badge bg-primary text-white text-center rounded me-3 px-3 py-2">
-                                            <span class="d-block h4 fw-bold mb-0">15</span>
-                                            <span class="d-block small text-uppercase">Mar</span>
-                                        </div>
-                                        <h5 class="mb-0 fw-bold">Día 1: Integración de la IA en el Aula</h5>
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="day1" class="accordion-collapse collapse show" data-bs-parent="#accordionSchedule">
-                                <div class="accordion-body px-4 py-4 pt-1">
-                                    <ul class="schedule-list list-unstyled position-relative ms-3 mt-3">
-                                        <li class="position-relative pb-4 ps-4 border-start border-2 border-primary">
-                                            <span class="time-stamp fw-bold text-primary">09:00 - 10:00</span>
-                                            <h6 class="fw-bold mt-1">Acreditación y Bienvenida Oficial</h6>
-                                            <p class="text-muted small mb-0">Recepción de asistentes y entrega de
-                                                material en el hall principal.</p>
-                                            <div class="timeline-dot bg-primary position-absolute rounded-circle"></div>
-                                        </li>
-                                        <li class="position-relative pb-4 ps-4 border-start border-2 border-primary">
-                                            <span class="time-stamp fw-bold text-primary">10:00 - 11:30</span>
-                                            <h6 class="fw-bold mt-1">Ponencia Marco: La disrupción de la IA en la
-                                                enseñanza</h6>
-                                            <p class="text-muted small mb-0">Dra. Elena Martínez - Experta en Tecnología
-                                                Educativa.</p>
-                                            <div class="timeline-dot bg-primary position-absolute rounded-circle"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Day 2 (Placeholder) -->
-                        <div class="accordion-item border-0 rounded-4 mb-3 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed rounded-4" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#day2" aria-expanded="false">
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="date-badge bg-light text-dark text-center rounded me-3 px-3 py-2 border">
-                                            <span class="d-block h4 fw-bold mb-0 text-muted">16</span>
-                                            <span class="d-block small text-uppercase text-muted">Mar</span>
-                                        </div>
-                                        <h5 class="mb-0 fw-bold text-muted">Día 2: Inclusión y Diversidad (Próximamente)
-                                        </h5>
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="day2" class="accordion-collapse collapse" data-bs-parent="#accordionSchedule">
-                                <div class="accordion-body px-4 py-4">
-                                    <p class="text-muted mb-0">Pendiente de publicar actividades detalladas.</p>
-                                </div>
-                            </div>
+                        <div class="accordion custom-accordion shadow-sm" id="accordionSchedule">
+                            <!-- Las jornadas se insertarán aquí por JavaScript -->
                         </div>
                     </div>
                 </div>
@@ -203,119 +151,80 @@
     <section id="ponentes" class="py-6 bg-color">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase tracking-wider">Expertos</span>
                 <h2 class="display-5 fw-bold mt-2">Ponentes Destacados</h2>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift text-center p-4">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Ponente 1" class="rounded-circle mx-auto mb-3 object-fit-cover"
-                            style="width: 120px; height: 120px;">
-                        <h4 class="fw-bold mb-1">Dra. Elena Martínez</h4>
-                        <p class="text-primary small fw-medium mb-3">Investigadora EdTech</p>
-                        <p class="text-muted small">Especialista en integración de IA en entornos educativos y nuevas
-                            estrategias de evaluación.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift text-center p-4">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Ponente 2" class="rounded-circle mx-auto mb-3 object-fit-cover"
-                            style="width: 120px; height: 120px;">
-                        <h4 class="fw-bold mb-1">Dr. Carlos Vives</h4>
-                        <p class="text-primary small fw-medium mb-3">Catedrático de Pedagogía</p>
-                        <p class="text-muted small">Referente nacional en didácticas inclusivas y desarrollo de altas
-                            capacidades.</p>
-                    </div>
-                </div>
+            <div class="row g-4 justify-content-center" id="ponentes-container">
+                <!-- Las tarjetas de ponentes se insertarán aquí por JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- CTA & Registration -->
-    <section id="inscripcion" class="py-6 position-relative z-1"
-        style="background-color: var(--bs-dark); color: white;">
-        <div class="container">
-            <div class="bg-white text-dark rounded-5 shadow-lg p-4 p-md-5 overflow-hidden position-relative">
-                <!-- Glass shape -->
-                <div class="position-absolute top-0 end-0 translate-middle text-primary opacity-10"
-                    style="font-size: 15rem; z-index: 0;">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
+    <!-- Location -->
+    <section id="ubicacion" class="section-dark py-6 position-relative overflow-hidden">
+        <div class="container position-relative z-1">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wider">Dónde estamos</span>
+                <h2 class="display-5 fw-bold mt-2">Cómo llegar al evento</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">El congreso se celebrará de forma presencial
+                    exclusiva para miembros del máster en nuestras instalaciones de la Universidad de Zaragoza.</p>
+            </div>
 
-                <div class="row align-items-center z-1 position-relative">
+            <div class="location-card-premium rounded-5 shadow-lg p-4 p-md-5 overflow-hidden">
+                <div class="row align-items-center position-relative">
                     <div class="col-lg-5 mb-5 mb-lg-0">
-                        <h2 class="display-6 fw-bold mb-3">Reserva tu entrada</h2>
-                        <p class="text-muted mb-4">Asegura tu participación en el XVI CIE. Completa el formulario de
-                            pre-inscripción y nos pondremos en contacto contigo cuando se abran las plazas oficiales.
-                        </p>
-
-                        <ul class="list-unstyled d-flex flex-column gap-3 mt-4">
-                            <li class="d-flex align-items-center">
-                                <div class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li class="d-flex align-items-start">
+                                <div class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
                                     style="width:40px;height:40px;">
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
-                                <div>
-                                    <strong class="d-block">Ubicación</strong>
-                                    <span class="text-muted small">Campus Universitario, Salón de Actos.</span>
+                                <div class="text-dark">
+                                    <strong class="d-block mb-1">Ubicación Física</strong>
+                                    <p class="text-muted small mb-0">Facultad de Educación de la Universidad de
+                                        Zaragoza.<br />Aula 1.05 (primera planta)</p>
                                 </div>
                             </li>
-                            <li class="d-flex align-items-center">
+                            <li class="d-flex align-items-center mt-3">
                                 <div class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
                                     style="width:40px;height:40px;">
                                     <i class="fa-regular fa-envelope"></i>
                                 </div>
-                                <div>
-                                    <strong class="d-block">Contacto</strong>
-                                    <span class="text-muted small">congreso.cie@universidad.edu</span>
+                                <div class="text-dark">
+                                    <strong class="d-block">Contacto Organización</strong>
+                                    <p class="text-muted small mb-0">congreso.cie@universidad.edu</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <form class="needs-validation"
-                            onsubmit="event.preventDefault(); alert('¡Formulario simulado con éxito! Se conectará a backend próximamente.');">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label fw-medium text-muted small">Nombre</label>
-                                    <input type="text" class="form-control form-control-lg bg-light border-0" id="name"
-                                        required placeholder="Tu nombre">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="lastName"
-                                        class="form-label fw-medium text-muted small">Apellidos</label>
-                                    <input type="text" class="form-control form-control-lg bg-light border-0"
-                                        id="lastName" required placeholder="Tus apellidos">
-                                </div>
-                                <div class="col-12">
-                                    <label for="email" class="form-label fw-medium text-muted small">Email</label>
-                                    <input type="email" class="form-control form-control-lg bg-light border-0"
-                                        id="email" required placeholder="correo@ejemplo.com">
-                                </div>
-                                <div class="col-12">
-                                    <label for="status" class="form-label fw-medium text-muted small">Tipo de
-                                        asistente</label>
-                                    <select class="form-select form-select-lg bg-light border-0" id="status" required>
-                                        <option value="">Selecciona una opción...</option>
-                                        <option value="estudiante">Estudiante Máster</option>
-                                        <option value="profesor">Profesorado</option>
-                                        <option value="externo">Público Externo</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <button
-                                        class="btn btn-primary btn-lg w-100 rounded-3 py-3 shadow-sm hover-lift fw-bold"
-                                        type="submit">Enviar Solicitud <i
-                                            class="fa-solid fa-arrow-right ms-2"></i></button>
+                    <div class="col-lg-12 mt-4 mt-lg-0">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold mb-3">Plano del Campus</h5>
+                                <div class="rounded-4 overflow-hidden shadow-sm w-100 border border-light location-card-media"
+                                    style="height: 350px; cursor: pointer;"
+                                    onclick="openImageModal('assets/plano_aula_1_5.png', 'Plano del Campus')">
+                                    <img src="assets/plano_aula_1_5.png" alt="Plano de ubicación Facultad de Educación"
+                                        class="w-100 h-100 object-fit-contain bg-light p-2">
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-6">
+                                <h5 class="fw-bold mb-3">Google Maps</h5>
+                                <div class="rounded-4 overflow-hidden shadow-sm w-100 location-card-media"
+                                    style="height: 350px;">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.66011967245!2d-0.9030015881151995!3d41.64147747114889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb4c4082555555555%3A0xb53b58a27d36230!2sFacultad%20de%20Educaci%C3%B3n%20de%20la%20Universidad%20de%20Zaragoza!5e0!3m2!1ses!2ses!4v1772879019715!5m2!1ses!2ses"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Decorative background shapes -->
+        <div class="shape shape-1" style="opacity: 0.1; top: -10%; right: -10%;"></div>
+        <div class="shape shape-2" style="opacity: 0.08; bottom: -15%; left: -10%;"></div>
     </section>
 
     <!-- Footer -->
@@ -325,38 +234,209 @@
             <h3 class="fw-bold mb-3 ls-wide">XVI CIE</h3>
             <p class="text-muted mb-4 max-w-600 mx-auto">Máster de Profesorado • Curso 2025/2026. <br> Fomentando la
                 innovación y excelencia educativa.</p>
-            <div class="d-flex justify-content-center gap-3 mb-4">
-                <a href="#" class="btn btn-outline-secondary text-white rounded-circle px-0 border-opacity-50"
-                    style="width:40px;height:40px;line-height:28px;"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="btn btn-outline-secondary text-white rounded-circle px-0 border-opacity-50"
-                    style="width:40px;height:40px;line-height:28px;"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="btn btn-outline-secondary text-white rounded-circle px-0 border-opacity-50"
-                    style="width:40px;height:40px;line-height:28px;"><i class="fa-brands fa-instagram"></i></a>
-            </div>
             <hr class="border-secondary mb-4 opacity-25">
             <p class="small text-muted mb-0">&copy; 2025 Congreso de Innovación Educativa (CIE). Todos los derechos
                 reservados.</p>
         </div>
     </footer>
 
+    <!-- Modal for Speakers -->
+    <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 pb-0 position-relative z-1 d-flex justify-content-end">
+                    <button type="button"
+                        class="btn-close bg-light rounded-circle p-2 shadow-sm position-absolute top-0 end-0 mt-n1 me-n1 z-3 opacity-100"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 px-md-5 pb-5 pt-0 text-center">
+                    <img id="modalSpeakerImg" src="" alt="Speaker"
+                        class="rounded-circle mx-auto mb-4 object-fit-cover shadow-sm bg-light"
+                        style="width: 140px; height: 140px; outline: 4px solid var(--bs-primary); outline-offset: 4px; margin-top: -30px; position: relative; z-index: 1;">
+                    <h3 id="modalSpeakerName" class="fw-bold mb-1">Speaker Name</h3>
+                    <p id="modalSpeakerTitle" class="text-primary fw-medium mb-4">Speaker Title</p>
+                    <div class="text-start bg-light rounded-4 p-4">
+                        <h6 class="fw-bold mb-3"><i class="fa-solid fa-file-lines text-primary me-2"></i>Resumen de la
+                            Presentación</h6>
+                        <p id="modalSpeakerResumen" class="text-muted mb-0"
+                            style="white-space: pre-wrap; text-align: justify;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg">
+                <div class="modal-header border-0 bg-dark py-3 px-4 d-flex justify-content-between align-items-center"
+                    style="background: linear-gradient(90deg, #1a1a1a, #2d2d2d) !important;">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-2"
+                            style="width: 32px; height: 32px;">
+                            <i class="fa-solid fa-map text-white small"></i>
+                        </div>
+                        <h5 class="modal-title text-white fw-bold mb-0" id="modalImageCaption">Plano del Campus</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2 bg-light d-flex align-items-center justify-content-center"
+                    style="min-height: 400px; background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;">
+                    <img id="modalImage" src="" alt="Full View"
+                        class="img-fluid rounded-3 shadow-sm border border-white border-2"
+                        style="max-height: 80vh; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="data/data.js"></script>
     <script>
         // Navbar glassmorphism effect on scroll
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('glass-scrolled');
-                navbar.classList.remove('py-3');
+                navbar.classList.remove('py-2');
             } else {
                 navbar.classList.remove('glass-scrolled');
-                navbar.classList.add('py-3');
+                navbar.classList.add('py-2');
             }
         });
         // Initial setup
         if (window.scrollY <= 50) {
-            document.getElementById('navbar').classList.add('py-3');
+            document.getElementById('navbar').classList.add('py-2');
         }
+
+        // Renderizado Dinámico
+        const renderSchedule = () => {
+            const container = document.getElementById('accordionSchedule');
+            if (!container) return;
+            let html = '';
+            dataPonencias.dias.forEach((dia) => {
+                const isExpanded = dia.isActive ? 'true' : 'false';
+                const collapseClass = dia.isActive ? 'collapse show' : 'collapse';
+                const buttonClass = dia.isActive ? 'accordion-button rounded-4' : 'accordion-button collapsed rounded-4';
+                const badgeClass = dia.isActive ? 'bg-primary text-white' : 'bg-light text-dark border border-secondary border-opacity-25';
+                const textClass = dia.isActive ? '' : 'text-muted';
+
+                let eventosHtml = '';
+                if (dia.eventos && dia.eventos.length > 0) {
+                    eventosHtml = '<ul class="schedule-list list-unstyled position-relative ms-3 mt-3">';
+                    dia.eventos.forEach(evento => {
+                        // Find speaker detail to get avatar
+                        const speakerDetail = dataPonencias.ponentes.find(p => p.nombre === evento.ponente);
+                        const fotoSrc = speakerDetail && speakerDetail.fotoUrl ? speakerDetail.fotoUrl : defaultAvatar;
+                        const hasAvatar = evento.ponente !== "Organización" && evento.ponente !== "Todos";
+                        const avatarHtml = hasAvatar ? `<img src="${fotoSrc}" alt="${evento.ponente}" class="rounded-circle shadow-sm object-fit-cover bg-light border border-2 border-white position-absolute d-none d-sm-block" style="width: 48px; height: 48px; right: 0; top: 0;">` : '';
+
+                        eventosHtml += `
+                            <li class="position-relative pb-4 ps-4 pe-sm-5 border-start border-2 border-primary">
+                                <span class="time-stamp fw-bold text-primary">${evento.hora}</span>
+                                <h6 class="fw-bold mt-1 pe-5">${evento.titulo}</h6>
+                                <p class="text-muted small mb-0 pe-5">${evento.ponente}${evento.descripcion ? ' - ' + evento.descripcion : ''}</p>
+                                ${avatarHtml}
+                                <div class="timeline-dot bg-primary position-absolute rounded-circle"></div>
+                            </li>
+                        `;
+                    });
+                    eventosHtml += '</ul>';
+                }
+
+                html += `
+                    <div class="accordion-item border-0 rounded-4 mb-3 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="${buttonClass}" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#${dia.id}" aria-expanded="${isExpanded}">
+                                <div class="d-flex align-items-center">
+                                    <div class="date-badge ${badgeClass} text-center rounded me-3 px-3 py-2">
+                                        <span class="d-block h4 fw-bold mb-0 ${textClass}">${dia.fechaCorta}</span>
+                                        <span class="d-block small text-uppercase ${textClass}">${dia.mesCorto}</span>
+                                    </div>
+                                    <h5 class="mb-0 fw-bold ${textClass}">${dia.titulo}</h5>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="${dia.id}" class="accordion-collapse ${collapseClass}" data-bs-parent="#accordionSchedule">
+                            <div class="accordion-body px-4 py-4 pt-1">
+                                ${eventosHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        };
+
+        const renderSpeakers = () => {
+            const container = document.getElementById('ponentes-container');
+            if (!container) return;
+            let html = '';
+            dataPonencias.ponentes.forEach((ponente, index) => {
+                const fotoSrc = ponente.fotoUrl || defaultAvatar;
+                const empresaText = ponente.empresa ? `<p class="text-muted small mb-3"><i class="fa-regular fa-building me-1"></i>${ponente.empresa}</p>` : '';
+                const resumenCorto = ponente.resumen.substring(0, 110) + (ponente.resumen.length > 110 ? '...' : '');
+
+                html += `
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift p-4 text-center d-flex flex-column" tabindex="0" style="cursor: pointer;" onclick="openSpeakerModal(${index})">
+                            <img src="${fotoSrc}" alt="${ponente.nombre}" class="rounded-circle mx-auto mb-3 object-fit-cover shadow-sm bg-light" style="width: 120px; height: 120px; outline: 3px solid var(--bs-primary); outline-offset: 3px;">
+                            <h4 class="fw-bold mb-1">${ponente.nombre}</h4>
+                            <p class="text-primary small fw-bold mb-2">${ponente.tituloPonencia}</p>
+                            ${empresaText}
+                            <p class="text-muted small flex-grow-1">${resumenCorto}</p>
+                            <div class="mt-3 pt-3 border-top border-light d-flex justify-content-center align-items-center">
+                                <span class="badge bg-light text-dark fw-normal border px-3 py-2"><i class="fa-regular fa-calendar me-2"></i>${ponente.horaYFecha}</span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="btn btn-sm btn-outline-primary rounded-pill px-4">Leer más <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                 `;
+            });
+            container.innerHTML = html;
+        };
+
+        // Logica del Modal
+        const openSpeakerModal = (index) => {
+            const ponente = dataPonencias.ponentes[index];
+            if (!ponente) return;
+
+            const fotoSrc = ponente.fotoUrl || defaultAvatar;
+            document.getElementById('modalSpeakerImg').src = fotoSrc;
+            document.getElementById('modalSpeakerName').innerText = ponente.nombre;
+            document.getElementById('modalSpeakerTitle').innerText = ponente.tituloPonencia;
+            document.getElementById('modalSpeakerResumen').innerText = ponente.resumen;
+
+            const modalElement = document.getElementById('speakerModal');
+            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+            modalInstance.show();
+        };
+
+        // Logica del Modal de Imagen
+        const openImageModal = (src, alt) => {
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalImageCaption');
+            modalImg.src = src;
+            modalCaption.innerText = alt;
+
+            const modalElement = document.getElementById('imageModal');
+            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+            modalInstance.show();
+        };
+
+        // Ejecutar montaje 
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof dataPonencias !== 'undefined') {
+                renderSchedule();
+                renderSpeakers();
+            }
+        });
     </script>
 </body>
 
