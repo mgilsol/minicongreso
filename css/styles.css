@@ -352,3 +352,18 @@ h6,
 .bg-primary-subtle {
     background-color: hsl(var(--primary-hue), 100%, 95%) !important;
 }
+
+.scroll-to-top-btn {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: none;
+}

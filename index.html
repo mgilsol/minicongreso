@@ -1,353 +1,574 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XVI CIE - Congreso de Innovación Educativa</title>
-    <meta name="description"
-        content="XVI Congreso de Innovación Educativa (CIE) - Máster de Profesorado. Curso 2025/2026.">
+    <meta
+      name="description"
+      content="XVI Congreso de Innovación Educativa (CIE) - Máster de Profesorado. Curso 2025/2026."
+    />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/robot.png">
+    <link rel="icon" type="image/png" href="assets/robot.png" />
 
     <!-- Google Fonts: Outfit for headings, Inter for body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
-
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm glass-navbar navbar-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="assets/logo_transparent.png" alt="Logo CIE" height="55" class="rounded">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">El Congreso</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ponentes">Ponentes</a></li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-primary rounded-pill px-4" href="#ubicacion">Cómo llegar</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top shadow-sm glass-navbar navbar-dark"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img
+            src="assets/logo_transparent.png"
+            alt="Logo CIE"
+            height="55"
+            class="rounded"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">El Congreso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programa">Programa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ponentes">Ponentes</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary rounded-pill px-4" href="#ubicacion"
+                >Cómo llegar</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+
+    <button class="btn btn-primary scroll-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
 
     <!-- Hero Section -->
     <header id="inicio" class="hero-section d-flex align-items-center">
-        <div class="container text-center text-white position-relative z-1">
-            <span class="badge bg-light text-primary mb-3 py-2 px-3 rounded-pill fw-medium tracking-wide">Máster de
-                Profesorado • Curso 2025/2026</span>
-            <h1 class="display-3 fw-bolder mb-4 hero-title text-white">XVI Congreso de <br><span
-                    class="text-gradient">Innovación Educativa</span></h1>
-            <p class="lead mb-5 opacity-75 max-w-700 mx-auto">Explorando las metodologías del mañana, transformando las
-                aulas del presente. Un espacio de encuentro para futuros docentes.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#ubicacion" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg feature-btn">Cómo
-                    llegar</a>
-                <a href="#programa" class="btn btn-outline-light btn-lg rounded-pill px-5 hover-lift">Ver Programa</a>
-            </div>
+      <div class="container text-center text-white position-relative z-1">
+        <span
+          class="badge bg-light text-primary mb-3 py-2 px-3 rounded-pill fw-medium tracking-wide"
+          >Máster de Profesorado • Curso 2025/2026</span
+        >
+        <h1 class="display-3 fw-bolder mb-4 hero-title text-white">
+          XVI Congreso de <br /><span class="text-gradient"
+            >Innovación Educativa</span
+          >
+        </h1>
+        <p class="lead mb-5 opacity-75 max-w-700 mx-auto">
+          Explorando las metodologías del mañana, transformando las aulas del
+          presente. Un espacio de encuentro para futuros docentes.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a
+            href="#ubicacion"
+            class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg feature-btn"
+            >Cómo llegar</a
+          >
+          <a
+            href="#programa"
+            class="btn btn-outline-light btn-lg rounded-pill px-5 hover-lift"
+            >Ver Programa</a
+          >
         </div>
-        <div class="hero-overlay"></div>
-        <!-- Animated shapes for premium dynamic background -->
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <!-- Animated shapes for premium dynamic background -->
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
     </header>
 
     <!-- About Section -->
     <section id="sobre-nosotros" class="py-6 bg-color">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="position-relative">
-                        <!-- Imagen del evento CIE con temática principal -->
-                        <img src="assets/image1.jpeg" alt="Presentación en el Congreso de Educación"
-                            class="img-fluid rounded-4 shadow-lg border border-white border-4 object-fit-cover"
-                            style="max-height: 500px; width: 100%;">
-                        <div
-                            class="experience-badge bg-white shadow-lg rounded-4 p-3 text-center position-absolute bottom-0 end-0 translate-middle-y me-n4 d-none d-lg-block">
-                            <h3 class="fw-bold text-primary mb-0">16ª</h3>
-                            <p class="text-muted small mb-0">Edición</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <span class="text-primary fw-bold text-uppercase tracking-wider">El Congreso</span>
-                    <h2 class="display-5 fw-bold mt-2 mb-4">Transformando la educación juntos</h2>
-                    <p class="text-muted mb-4 text-lg">El CIE es el evento cumbre para los estudiantes y profesionales
-                        del Máster de Profesorado. Un espacio para compartir investigaciones, metodologías activas e
-                        ideas disruptivas que moldearán el futuro de la enseñanza.</p>
-
-                    <div class="row g-4 mt-2">
-                        <div class="col-md-6 d-flex align-items-start">
-                            <div
-                                class="icon-box bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0">
-                                <i class="fa-solid fa-lightbulb"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-1">Ideas Innovadoras</h5>
-                                <p class="text-muted small">Conoce las tendencias educativas más recientes.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex align-items-start">
-                            <div
-                                class="icon-box secondary-bg text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0">
-                                <i class="fa-solid fa-users"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-1">Networking</h5>
-                                <p class="text-muted small">Conecta con expertos y futuros docentes.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <!-- Imagen del evento CIE con temática principal -->
+              <img
+                src="assets/image1.jpeg"
+                alt="Presentación en el Congreso de Educación"
+                class="img-fluid rounded-4 shadow-lg border border-white border-4 object-fit-cover"
+                style="max-height: 500px; width: 100%"
+              />
+              <div
+                class="experience-badge bg-white shadow-lg rounded-4 p-3 text-center position-absolute bottom-0 end-0 translate-middle-y me-n4 d-none d-lg-block"
+              >
+                <h3 class="fw-bold text-primary mb-0">16ª</h3>
+                <p class="text-muted small mb-0">Edición</p>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="text-primary fw-bold text-uppercase tracking-wider"
+              >El Congreso</span
+            >
+            <h2 class="display-5 fw-bold mt-2 mb-4">
+              Transformando la educación juntos
+            </h2>
+            <p class="text-muted mb-4 text-lg">
+              El CIE es el evento cumbre para los estudiantes y profesionales
+              del Máster de Profesorado. Un espacio para compartir
+              investigaciones, metodologías activas e ideas disruptivas que
+              moldearán el futuro de la enseñanza.
+            </p>
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-6 d-flex align-items-start">
+                <div
+                  class="icon-box bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                >
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Ideas Innovadoras</h5>
+                  <p class="text-muted small">
+                    Conoce las tendencias educativas más recientes.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-start">
+                <div
+                  class="icon-box secondary-bg text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                >
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">Networking</h5>
+                  <p class="text-muted small">
+                    Conecta con expertos y futuros docentes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Schedule Section -->
     <section id="programa" class="py-6 bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase tracking-wider">Agenda</span>
-                <h2 class="display-5 fw-bold mt-2">Programa del Evento</h2>
-                <p class="text-muted mx-auto mb-4" style="max-width: 600px;">Dos jornadas intensivas de aprendizaje,
-                    talleres prácticos y ponencias inspiradoras.</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="accordion custom-accordion shadow-sm" id="accordionSchedule">
-                        <div class="accordion custom-accordion shadow-sm" id="accordionSchedule">
-                            <!-- Las jornadas se insertarán aquí por JavaScript -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-bold text-uppercase tracking-wider"
+            >Agenda</span
+          >
+          <h2 class="display-5 fw-bold mt-2">Programa del Evento</h2>
+          <p class="text-muted mx-auto mb-4" style="max-width: 600px">
+            Dos jornadas intensivas de aprendizaje, talleres prácticos y
+            ponencias inspiradoras.
+          </p>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div
+              class="accordion custom-accordion shadow-sm"
+              id="accordionSchedule"
+            >
+              <div
+                class="accordion custom-accordion shadow-sm"
+                id="accordionSchedule"
+              >
+                <!-- Las jornadas se insertarán aquí por JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Speakers Section -->
     <section id="ponentes" class="py-6 bg-color">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mt-2">Ponentes Destacados</h2>
-            </div>
-            <div class="row g-4 justify-content-center" id="ponentes-container">
-                <!-- Las tarjetas de ponentes se insertarán aquí por JavaScript -->
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mt-2">Ponentes Destacados</h2>
         </div>
+        <div class="row g-4 justify-content-center" id="ponentes-container">
+          <!-- Las tarjetas de ponentes se insertarán aquí por JavaScript -->
+        </div>
+      </div>
     </section>
 
     <!-- Location -->
-    <section id="ubicacion" class="section-dark py-6 position-relative overflow-hidden">
-        <div class="container position-relative z-1">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase tracking-wider">Dónde estamos</span>
-                <h2 class="display-5 fw-bold mt-2">Cómo llegar al evento</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">El congreso se celebrará de forma presencial
-                    exclusiva para miembros del máster en nuestras instalaciones de la Universidad de Zaragoza.</p>
-            </div>
-
-            <div class="location-card-premium rounded-5 shadow-lg p-4 p-md-5 overflow-hidden">
-                <div class="row align-items-center position-relative">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        <ul class="list-unstyled d-flex flex-column gap-3">
-                            <li class="d-flex align-items-start">
-                                <div class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                                    style="width:40px;height:40px;">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="text-dark">
-                                    <strong class="d-block mb-1">Ubicación Física</strong>
-                                    <p class="text-muted small mb-0">Facultad de Educación de la Universidad de
-                                        Zaragoza.<br />Aula 1.05 (primera planta)</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center mt-3">
-                                <div class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
-                                    style="width:40px;height:40px;">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </div>
-                                <div class="text-dark">
-                                    <strong class="d-block">Contacto Organización</strong>
-                                    <p class="text-muted small mb-0">congreso.cie@universidad.edu</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-12 mt-4 mt-lg-0">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <h5 class="fw-bold mb-3">Plano del Campus</h5>
-                                <div class="rounded-4 overflow-hidden shadow-sm w-100 border border-light location-card-media"
-                                    style="height: 350px; cursor: pointer;"
-                                    onclick="openImageModal('assets/plano_aula_1_5.png', 'Plano del Campus')">
-                                    <img src="assets/plano_aula_1_5.png" alt="Plano de ubicación Facultad de Educación"
-                                        class="w-100 h-100 object-fit-contain bg-light p-2">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h5 class="fw-bold mb-3">Google Maps</h5>
-                                <div class="rounded-4 overflow-hidden shadow-sm w-100 location-card-media"
-                                    style="height: 350px;">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.66011967245!2d-0.9030015881151995!3d41.64147747114889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb4c4082555555555%3A0xb53b58a27d36230!2sFacultad%20de%20Educaci%C3%B3n%20de%20la%20Universidad%20de%20Zaragoza!5e0!3m2!1ses!2ses!4v1772879019715!5m2!1ses!2ses"
-                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section
+      id="ubicacion"
+      class="section-dark py-6 position-relative overflow-hidden"
+    >
+      <div class="container position-relative z-1">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-bold text-uppercase tracking-wider"
+            >Dónde estamos</span
+          >
+          <h2 class="display-5 fw-bold mt-2">Cómo llegar al evento</h2>
+          <p class="text-muted mx-auto" style="max-width: 600px">
+            El congreso se celebrará de forma presencial exclusiva para miembros
+            del máster en nuestras instalaciones de la Universidad de Zaragoza.
+          </p>
         </div>
-        <!-- Decorative background shapes -->
-        <div class="shape shape-1" style="opacity: 0.1; top: -10%; right: -10%;"></div>
-        <div class="shape shape-2" style="opacity: 0.08; bottom: -15%; left: -10%;"></div>
+
+        <div
+          class="location-card-premium rounded-5 shadow-lg p-4 p-md-5 overflow-hidden"
+        >
+          <div class="row align-items-center position-relative">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <ul class="list-unstyled d-flex flex-column gap-3">
+                <li class="d-flex align-items-start">
+                  <div
+                    class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                    style="width: 40px; height: 40px"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="text-dark">
+                    <strong class="d-block mb-1">Ubicación Física</strong>
+                    <p class="text-muted small mb-0">
+                      Facultad de Educación de la Universidad de Zaragoza.<br />Aula
+                      1.05 (primera planta)
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center mt-3">
+                  <div
+                    class="icon-box bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                    style="width: 40px; height: 40px"
+                  >
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="text-dark">
+                    <strong class="d-block">Contacto Organización</strong>
+                    <p class="text-muted small mb-0">
+                      congreso.cie@universidad.edu
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-12 mt-4 mt-lg-0">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <h5 class="fw-bold mb-3">Plano del Campus</h5>
+                  <div
+                    class="rounded-4 overflow-hidden shadow-sm w-100 border border-light location-card-media"
+                    style="height: 350px; cursor: pointer"
+                    onclick="
+                      openImageModal(
+                        'assets/plano_aula_1_5.png',
+                        'Plano del Campus',
+                      )
+                    "
+                  >
+                    <img
+                      src="assets/plano_aula_1_5.png"
+                      alt="Plano de ubicación Facultad de Educación"
+                      class="w-100 h-100 object-fit-contain bg-light p-2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="fw-bold mb-3">Google Maps</h5>
+                  <div
+                    class="rounded-4 overflow-hidden shadow-sm w-100 location-card-media"
+                    style="height: 350px"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.66011967245!2d-0.9030015881151995!3d41.64147747114889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb4c4082555555555%3A0xb53b58a27d36230!2sFacultad%20de%20Educaci%C3%B3n%20de%20la%20Universidad%20de%20Zaragoza!5e0!3m2!1ses!2ses!4v1772879019715!5m2!1ses!2ses"
+                      width="100%"
+                      height="100%"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative background shapes -->
+      <div
+        class="shape shape-1"
+        style="opacity: 0.1; top: -10%; right: -10%"
+      ></div>
+      <div
+        class="shape shape-2"
+        style="opacity: 0.08; bottom: -15%; left: -10%"
+      ></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5 border-top border-secondary border-opacity-25"
-        style="background-color: hsl(220, 40%, 8%) !important;">
-        <div class="container text-center">
-            <h3 class="fw-bold mb-3 ls-wide">XVI CIE</h3>
-            <p class="text-muted mb-4 max-w-600 mx-auto">Máster de Profesorado • Curso 2025/2026. <br> Fomentando la
-                innovación y excelencia educativa.</p>
-            <hr class="border-secondary mb-4 opacity-25">
-            <p class="small text-muted mb-0">&copy; 2025 Congreso de Innovación Educativa (CIE). Todos los derechos
-                reservados.</p>
-        </div>
+    <footer
+      class="bg-dark text-white py-5 border-top border-secondary border-opacity-25"
+      style="background-color: hsl(220, 40%, 8%) !important"
+    >
+      <div class="container text-center">
+        <h3 class="fw-bold mb-3 ls-wide">XVI CIE</h3>
+        <p class="text-muted mb-4 max-w-600 mx-auto">
+          Máster de Profesorado • Curso 2025/2026. <br />
+          Fomentando la innovación y excelencia educativa.
+        </p>
+        <hr class="border-secondary mb-4 opacity-25" />
+        <p class="small text-muted mb-0">
+          &copy; 2025 Congreso de Innovación Educativa (CIE). Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
 
     <!-- Modal for Speakers -->
-    <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content rounded-4 border-0 shadow">
-                <div class="modal-header border-0 pb-0 position-relative z-1 d-flex justify-content-end">
-                    <button type="button"
-                        class="btn-close bg-light rounded-circle p-2 shadow-sm position-absolute top-0 end-0 mt-n1 me-n1 z-3 opacity-100"
-                        data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body px-4 px-md-5 pb-5 pt-0 text-center">
-                    <img id="modalSpeakerImg" src="" alt="Speaker"
-                        class="rounded-circle mx-auto mb-4 object-fit-cover shadow-sm bg-light"
-                        style="width: 140px; height: 140px; outline: 4px solid var(--bs-primary); outline-offset: 4px; margin-top: -30px; position: relative; z-index: 1;">
-                    <h3 id="modalSpeakerName" class="fw-bold mb-1">Speaker Name</h3>
-                    <p id="modalSpeakerTitle" class="text-primary fw-medium mb-4">Speaker Title</p>
-                    <div class="text-start bg-light rounded-4 p-4">
-                        <h6 class="fw-bold mb-3"><i class="fa-solid fa-file-lines text-primary me-2"></i>Resumen de la
-                            Presentación</h6>
-                        <p id="modalSpeakerResumen" class="text-muted mb-0"
-                            style="white-space: pre-wrap; text-align: justify;"></p>
-                    </div>
-                </div>
+    <div
+      class="modal fade"
+      id="speakerModal"
+      tabindex="-1"
+      aria-labelledby="speakerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+          <div
+            class="modal-header border-0 pb-0 position-relative z-1 d-flex justify-content-end"
+          >
+            <button
+              type="button"
+              class="btn-close bg-light rounded-circle p-2 shadow-sm position-absolute top-0 end-0 mt-n1 me-n1 z-3 opacity-100"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-4 px-md-5 pb-5 pt-0 text-center">
+            <img
+              id="modalSpeakerImg"
+              src=""
+              alt="Speaker"
+              class="rounded-circle mx-auto mb-4 object-fit-cover shadow-sm bg-light"
+              style="
+                width: 140px;
+                height: 140px;
+                outline: 4px solid var(--bs-primary);
+                outline-offset: 4px;
+                margin-top: -30px;
+                position: relative;
+                z-index: 1;
+              "
+            />
+            <h3 id="modalSpeakerName" class="fw-bold mb-1">Speaker Name</h3>
+            <p id="modalSpeakerTitle" class="text-primary fw-medium mb-4">
+              Speaker Title
+            </p>
+            <div class="text-start bg-light rounded-4 p-4">
+              <h6 class="fw-bold mb-3">
+                <i class="fa-solid fa-file-lines text-primary me-2"></i>Resumen
+                de la Presentación
+              </h6>
+              <p
+                id="modalSpeakerResumen"
+                class="text-muted mb-0"
+                style="white-space: pre-wrap; text-align: justify"
+              ></p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal for Image Preview -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg">
-                <div class="modal-header border-0 bg-dark py-3 px-4 d-flex justify-content-between align-items-center"
-                    style="background: linear-gradient(90deg, #1a1a1a, #2d2d2d) !important;">
-                    <div class="d-flex align-items-center">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-2"
-                            style="width: 32px; height: 32px;">
-                            <i class="fa-solid fa-map text-white small"></i>
-                        </div>
-                        <h5 class="modal-title text-white fw-bold mb-0" id="modalImageCaption">Plano del Campus</h5>
-                    </div>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-2 bg-light d-flex align-items-center justify-content-center"
-                    style="min-height: 400px; background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px;">
-                    <img id="modalImage" src="" alt="Full View"
-                        class="img-fluid rounded-3 shadow-sm border border-white border-2"
-                        style="max-height: 80vh; object-fit: contain;">
-                </div>
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg">
+          <div
+            class="modal-header border-0 bg-dark py-3 px-4 d-flex justify-content-between align-items-center"
+            style="
+              background: linear-gradient(90deg, #1a1a1a, #2d2d2d) !important;
+            "
+          >
+            <div class="d-flex align-items-center">
+              <div
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-2"
+                style="width: 32px; height: 32px"
+              >
+                <i class="fa-solid fa-map text-white small"></i>
+              </div>
+              <h5
+                class="modal-title text-white fw-bold mb-0"
+                id="modalImageCaption"
+              >
+                Plano del Campus
+              </h5>
             </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body p-2 bg-light d-flex align-items-center justify-content-center"
+            style="
+              min-height: 400px;
+              background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+              background-size: 20px 20px;
+            "
+          >
+            <img
+              id="modalImage"
+              src=""
+              alt="Full View"
+              class="img-fluid rounded-3 shadow-sm border border-white border-2"
+              style="max-height: 80vh; object-fit: contain"
+            />
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="data/data.js"></script>
     <script>
-        // Navbar glassmorphism effect on scroll
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('glass-scrolled');
-                navbar.classList.remove('py-2');
-            } else {
-                navbar.classList.remove('glass-scrolled');
-                navbar.classList.add('py-2');
-            }
+      const scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+
+      const displayButton = () => {
+        window.addEventListener("scroll", () => {
+          console.log(window.scrollY);
+
+          if (window.scrollY > 100) {
+            scrollToTopBtn.style.display = "block";
+          } else {
+            scrollToTopBtn.style.display = "none";
+          }
         });
-        // Initial setup
-        if (window.scrollY <= 50) {
-            document.getElementById('navbar').classList.add('py-2');
+      };
+
+      const scrollToTop = () => {
+        scrollToTopBtn.addEventListener("click", () => {
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+          console.log(event);
+        });
+      };
+      displayButton();
+      scrollToTop();
+      // Navbar glassmorphism effect on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("glass-scrolled");
+          navbar.classList.remove("py-2");
+        } else {
+          navbar.classList.remove("glass-scrolled");
+          navbar.classList.add("py-2");
         }
+      });
+      // Initial setup
+      if (window.scrollY <= 50) {
+        document.getElementById("navbar").classList.add("py-2");
+      }
 
-        // Renderizado Dinámico
-        const renderSchedule = () => {
-            const container = document.getElementById('accordionSchedule');
-            if (!container) return;
-            let html = '';
-            dataPonencias.dias.forEach((dia) => {
-                const isExpanded = dia.isActive ? 'true' : 'false';
-                const collapseClass = dia.isActive ? 'collapse show' : 'collapse';
-                const buttonClass = dia.isActive ? 'accordion-button rounded-4' : 'accordion-button collapsed rounded-4';
-                const badgeClass = dia.isActive ? 'bg-primary text-white' : 'bg-light text-dark border border-secondary border-opacity-25';
-                const textClass = dia.isActive ? '' : 'text-muted';
+      // Renderizado Dinámico
+      const renderSchedule = () => {
+        const container = document.getElementById("accordionSchedule");
+        if (!container) return;
+        let html = "";
+        dataPonencias.dias.forEach((dia) => {
+          const isExpanded = dia.isActive ? "true" : "false";
+          const collapseClass = dia.isActive ? "collapse show" : "collapse";
+          const buttonClass = dia.isActive
+            ? "accordion-button rounded-4"
+            : "accordion-button collapsed rounded-4";
+          const badgeClass = dia.isActive
+            ? "bg-primary text-white"
+            : "bg-light text-dark border border-secondary border-opacity-25";
+          const textClass = dia.isActive ? "" : "text-muted";
 
-                let eventosHtml = '';
-                if (dia.eventos && dia.eventos.length > 0) {
-                    eventosHtml = '<ul class="schedule-list list-unstyled position-relative ms-3 mt-3">';
-                    dia.eventos.forEach(evento => {
-                        // Find speaker detail to get avatar
-                        const speakerDetail = dataPonencias.ponentes.find(p => p.nombre === evento.ponente);
-                        const fotoSrc = speakerDetail && speakerDetail.fotoUrl ? speakerDetail.fotoUrl : defaultAvatar;
-                        const hasAvatar = evento.ponente !== "Organización" && evento.ponente !== "Todos";
-                        const avatarHtml = hasAvatar ? `<img src="${fotoSrc}" alt="${evento.ponente}" class="rounded-circle shadow-sm object-fit-cover bg-light border border-2 border-white position-absolute d-none d-sm-block" style="width: 48px; height: 48px; right: 0; top: 0;">` : '';
+          let eventosHtml = "";
+          if (dia.eventos && dia.eventos.length > 0) {
+            eventosHtml =
+              '<ul class="schedule-list list-unstyled position-relative ms-3 mt-3">';
+            dia.eventos.forEach((evento) => {
+              // Find speaker detail to get avatar
+              const speakerDetail = dataPonencias.ponentes.find(
+                (p) => p.nombre === evento.ponente,
+              );
+              const fotoSrc =
+                speakerDetail && speakerDetail.fotoUrl
+                  ? speakerDetail.fotoUrl
+                  : defaultAvatar;
+              const hasAvatar =
+                evento.ponente !== "Organización" && evento.ponente !== "Todos";
+              const avatarHtml = hasAvatar
+                ? `<img src="${fotoSrc}" alt="${evento.ponente}" class="rounded-circle shadow-sm object-fit-cover bg-light border border-2 border-white position-absolute d-none d-sm-block" style="width: 48px; height: 48px; right: 0; top: 0;">`
+                : "";
 
-                        eventosHtml += `
+              eventosHtml += `
                             <li class="position-relative pb-4 ps-4 pe-sm-5 border-start border-2 border-primary">
                                 <span class="time-stamp fw-bold text-primary">${evento.hora}</span>
                                 <h6 class="fw-bold mt-1 pe-5">${evento.titulo}</h6>
-                                <p class="text-muted small mb-0 pe-5">${evento.ponente}${evento.descripcion ? ' - ' + evento.descripcion : ''}</p>
+                                <p class="text-muted small mb-0 pe-5">${evento.ponente}${evento.descripcion ? " - " + evento.descripcion : ""}</p>
                                 ${avatarHtml}
                                 <div class="timeline-dot bg-primary position-absolute rounded-circle"></div>
                             </li>
                         `;
-                    });
-                    eventosHtml += '</ul>';
-                }
+            });
+            eventosHtml += "</ul>";
+          }
 
-                html += `
+          html += `
                     <div class="accordion-item border-0 rounded-4 mb-3 overflow-hidden shadow-sm">
                         <h2 class="accordion-header">
                             <button class="${buttonClass}" type="button" data-bs-toggle="collapse"
@@ -368,20 +589,24 @@
                         </div>
                     </div>
                 `;
-            });
-            container.innerHTML = html;
-        };
+        });
+        container.innerHTML = html;
+      };
 
-        const renderSpeakers = () => {
-            const container = document.getElementById('ponentes-container');
-            if (!container) return;
-            let html = '';
-            dataPonencias.ponentes.forEach((ponente, index) => {
-                const fotoSrc = ponente.fotoUrl || defaultAvatar;
-                const empresaText = ponente.empresa ? `<p class="text-muted small mb-3"><i class="fa-regular fa-building me-1"></i>${ponente.empresa}</p>` : '';
-                const resumenCorto = ponente.resumen.substring(0, 110) + (ponente.resumen.length > 110 ? '...' : '');
+      const renderSpeakers = () => {
+        const container = document.getElementById("ponentes-container");
+        if (!container) return;
+        let html = "";
+        dataPonencias.ponentes.forEach((ponente, index) => {
+          const fotoSrc = ponente.fotoUrl || defaultAvatar;
+          const empresaText = ponente.empresa
+            ? `<p class="text-muted small mb-3"><i class="fa-regular fa-building me-1"></i>${ponente.empresa}</p>`
+            : "";
+          const resumenCorto =
+            ponente.resumen.substring(0, 110) +
+            (ponente.resumen.length > 110 ? "..." : "");
 
-                html += `
+          html += `
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift p-4 text-center d-flex flex-column" tabindex="0" style="cursor: pointer;" onclick="openSpeakerModal(${index})">
                             <img src="${fotoSrc}" alt="${ponente.nombre}" class="rounded-circle mx-auto mb-3 object-fit-cover shadow-sm bg-light" style="width: 120px; height: 120px; outline: 3px solid var(--bs-primary); outline-offset: 3px;">
@@ -398,46 +623,47 @@
                         </div>
                     </div>
                  `;
-            });
-            container.innerHTML = html;
-        };
-
-        // Logica del Modal
-        const openSpeakerModal = (index) => {
-            const ponente = dataPonencias.ponentes[index];
-            if (!ponente) return;
-
-            const fotoSrc = ponente.fotoUrl || defaultAvatar;
-            document.getElementById('modalSpeakerImg').src = fotoSrc;
-            document.getElementById('modalSpeakerName').innerText = ponente.nombre;
-            document.getElementById('modalSpeakerTitle').innerText = ponente.tituloPonencia;
-            document.getElementById('modalSpeakerResumen').innerText = ponente.resumen;
-
-            const modalElement = document.getElementById('speakerModal');
-            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
-            modalInstance.show();
-        };
-
-        // Logica del Modal de Imagen
-        const openImageModal = (src, alt) => {
-            const modalImg = document.getElementById('modalImage');
-            const modalCaption = document.getElementById('modalImageCaption');
-            modalImg.src = src;
-            modalCaption.innerText = alt;
-
-            const modalElement = document.getElementById('imageModal');
-            const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
-            modalInstance.show();
-        };
-
-        // Ejecutar montaje 
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof dataPonencias !== 'undefined') {
-                renderSchedule();
-                renderSpeakers();
-            }
         });
-    </script>
-</body>
+        container.innerHTML = html;
+      };
 
+      // Logica del Modal
+      const openSpeakerModal = (index) => {
+        const ponente = dataPonencias.ponentes[index];
+        if (!ponente) return;
+
+        const fotoSrc = ponente.fotoUrl || defaultAvatar;
+        document.getElementById("modalSpeakerImg").src = fotoSrc;
+        document.getElementById("modalSpeakerName").innerText = ponente.nombre;
+        document.getElementById("modalSpeakerTitle").innerText =
+          ponente.tituloPonencia;
+        document.getElementById("modalSpeakerResumen").innerText =
+          ponente.resumen;
+
+        const modalElement = document.getElementById("speakerModal");
+        const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+        modalInstance.show();
+      };
+
+      // Logica del Modal de Imagen
+      const openImageModal = (src, alt) => {
+        const modalImg = document.getElementById("modalImage");
+        const modalCaption = document.getElementById("modalImageCaption");
+        modalImg.src = src;
+        modalCaption.innerText = alt;
+
+        const modalElement = document.getElementById("imageModal");
+        const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+        modalInstance.show();
+      };
+
+      // Ejecutar montaje
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof dataPonencias !== "undefined") {
+          renderSchedule();
+          renderSpeakers();
+        }
+      });
+    </script>
+  </body>
 </html>
