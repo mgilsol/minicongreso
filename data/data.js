@@ -77,7 +77,7 @@ const dataPonencias = {
                     hora: "18:15",
                     titulo: "El coste oculto de la IA",
                     descripcion: "",
-                    ponente: "Yamilka"
+                    ponente: "Yamilka Toca Diaz"
                 },
                 {
                     hora: "18:45",
@@ -144,7 +144,7 @@ La sesión abordará también el potencial de los espacios virtuales y las exper
             redesSociales: {}
         },
         {
-            nombre: "Yamilka",
+            nombre: "Yamilka Toca Diaz",
             tituloPonencia: "El coste oculto de la IA",
             tema: "Sostenibilidad Algorítmica",
             fotoUrl: "",
